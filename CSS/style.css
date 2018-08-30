@@ -1,0 +1,124 @@
+body{
+    background-image: url("../Images/newspaper.jpg");
+    background-position: center;
+    background-repeat: repeat;
+}
+
+.data {
+    font-size: 12px;
+}
+
+.flag{
+    margin: 15px;
+    width: 150px;
+    height: 90px;
+    cursor: pointer;
+}
+
+.chooseBox{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.SelectBox{
+    font-size: 25px;
+    -webkit-text-stroke-width: 1px;
+    font-weight: bold;
+    -webkit-text-stroke-color: #fff;
+    background-color: rgba(211,211,211, 0.2);
+    padding: 20px;
+}
+
+.infoBox{
+    width: 700px;
+    color: white;
+    background-color: rgba(4, 3, 3,0.4);
+    text-align: center;
+    margin-top: 15px;
+    padding: 20px;
+}
+
+.infoBox .text {
+    margin: 20px;
+}
+
+.headers {
+    text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+    text-decoration: underline;
+}
+
+
+.infoBox .arrow {
+    position: relative;
+    background: #f1f1f1;
+    border: 5px solid #DDDDDD;
+}
+.infoBox .arrow:after,.infoBox .arrow:before {
+    left: 100%;
+    top: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.infoBox .arrow:after {
+    border-color: rgba(241, 241, 241, 0);
+    border-left-color: #f1f1f1;
+    border-width: 20px;
+    margin-top: -20px;
+}
+.infoBox .arrow:before {
+    border-color: rgba(221, 221, 221, 0);
+    border-left-color: #DDDDDD;
+    border-width: 27px;
+    margin-top: -27px;
+}
+
+#app > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.newsPhoto{
+    width: 624px;
+    height: 351px;
+}
+
+.News {
+    background-color: rgba(255,255,255,0.7);
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.News a {
+    color: black;
+}
+
+.myBtn {
+    display: none;
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: rgba(211,211,211, 0.2);
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+}
+
+.myBtn:hover {
+    background-color: red;
+}
